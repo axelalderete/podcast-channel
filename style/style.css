@@ -6,6 +6,13 @@
     text-decoration: none;
 }
 
+.logo{
+    margin: 18px;
+    height: 45px;
+    width: 45px;
+}
+
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -16,13 +23,7 @@ nav {
     width: 100%;
 }
 
-label.logo {
-    color: rgb(15, 0, 231);
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
+
 
 nav ul {
     float: right;
@@ -63,15 +64,22 @@ a:hover {
     cursor: pointer;
 }
 
+.cruzbtn {
+    display: none;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
 #check {
     display: none;
 }
 
 @media (max-width: 952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
+   
 
     nav ul li a {
         font-size: 16px;
@@ -82,6 +90,10 @@ a:hover {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
+    }
+
+    .cruzbtn {
+        display: none;
     }
 
     ul {
@@ -112,7 +124,21 @@ a:hover {
         text-decoration: none;
     }
 
-    #ckeck:checked~ul {
+    #check:checked~ul {
         left: 0;
     }
+
+    #check:checked~ .cruzbtn {
+        display: block;
+    }
+
+    #check:checked~ .checkbtn {
+        left: 0;
+        display: none;
+    }
+
+
+
+    
+    
 }
