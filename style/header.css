@@ -14,7 +14,7 @@ h1::after {
     color: #0000EC;
 }
 
-#title-header{
+.title-header{
     display: none;
 }
 
@@ -76,7 +76,7 @@ h1::after {
         margin: 20px;
     }
 
-    #title-header{
+    .title-header{
         display: block;
     }
 }

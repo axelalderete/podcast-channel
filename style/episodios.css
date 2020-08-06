@@ -58,20 +58,23 @@
 }
 
 .title-phone {
+    margin-left: 600px;
     font-size: 48px;
     color: #060A24;
     letter-spacing: 0;
 }
 
 .description-phone {
-    width: 464px;
+    margin-left: 600px;
+    width: 401px;
     font-size: 14px;
 }
 
 .contenedor-phone {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: 1fr;
+    justify-content: end;
 }
 
 @media (max-width: 1252px) {
@@ -94,7 +97,13 @@
 
 @media (max-width: 768px) {
     .img-xs {
+        height: 160px;
         width: 100%;
+    }
+
+    .episodios {
+        height: 910px;
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
     }
 
     .img-episodios-xs {
@@ -126,13 +135,14 @@
     }
 
     .title-phone {
-        padding: 20px;
-        margin-top: 56px;
+        margin: 0;
+        margin-top: 146px;
+        padding: 0px 20px;
         font-size: 36px;
     }
 
     .description-phone {
-        
+        padding: 0 5%;
         margin: 0;
         text-align: left;
         width: 100%;
